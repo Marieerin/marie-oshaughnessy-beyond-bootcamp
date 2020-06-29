@@ -1,1 +1,1 @@
-# marie-oshaughnessy-beyond-bootcamp
+# marieOshaughnessyBeyondBootcamp
