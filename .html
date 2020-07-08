@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class Appetizer{
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+  order(how_many){
+    console.log("you're total is " + (this.price * how_many))
+    return 0
+  }
+};
+
+let nachos = new Appetizer('nachos a la Marie', 25);
+let calamari = new Appetizer('calamari a la Al', 3);
+let salad = new Appetizer('salad a la Al', 3);
+
+let soup = new Appetizer('soup a la Al', 3);
+
+let breadsticks = new Appetizer('breadsticks a la quack', 3);
+
+// nachos
+// properties:
+// - name
+// - price
+// - order
+
+nachos.order(4);
+
+class Menu{
+  constructor(resto, items){
+    this.resto = resto;
+    this.items = items;
+  };
+  print_everything(){
+    console.log("Welcome to " + this.resto + "! We have the following options:" );
+    for(const item in this.items){
+        console.log(this.items[item].name + ' $' + this.items[item].price);
+                      console.log('---')    }
+  }
+}
+
+
+let menu = new Menu('Papa Vitos', [nachos, calamari, salad, breadsticks, soup]);    
+
+menu.print_everything();
+</script>
+</body>
+</html>

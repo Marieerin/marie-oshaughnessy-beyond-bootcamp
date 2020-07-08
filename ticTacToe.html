@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+
+
+    <!-- styleSheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TIC TAC TOE</h1>
+        <form action="">
+            <fieldset>
+                <span>One player or two player?</span>
+                <label for="onePlayer">One Player!</label>
+                <input type="radio" name="playerSelect" id="onePlayer">
+                <label for="twoPlayer">Two Players!</label>
+                <input type="radio" name="playerSelect" id="twoPlayer">
+            </fieldset>
+            <fieldset>
+                <span>Are you X or O?</span>
+                <label for="x">X</label>
+                <input type="radio" name="XorO" id="x" value="x">
+                <label for="o">O</label>
+                <input type="radio" name="XorO" id="o" value="o">
+            </fieldset>
+            <button>GO!</button>
+        </form>
+    </header>
+    <main>
+        <div class="gameBoard">
+            <ul>
+                <li class="box" value="0.0"> </li>
+                <li class="box" value="0.1"> </li>
+                <li class="box" value="0.2"> </li>
+            </ul>
+            <ul>
+                <li class="box" value="1.0"> </li>
+                <li class="box" value="1.1"> </li>
+                <li class="box" value="1.2"> </li>
+            </ul>
+            <ul>
+                <li class="box" value="2.0"> </li>
+                <li class="box" value="2.1"> </li>
+                <li class="box" value="2.2"> </li>
+            </ul>
+        </div>
+    </main>
+    <script src="scriptt.js"></script>
+</body>
+</html>
